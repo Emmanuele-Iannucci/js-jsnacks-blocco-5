@@ -14,12 +14,23 @@ const people = [
 ];
 
 // Stampa in console tutti i nomi
+people.forEach((person) => {
+  console.log(person.name);
+});
+
 
 
 const numbers = [2, 8, 4, 7, 2, 87];
 
 // Crea un nuovo array in cui tutti i numeri siano incrementati di 1
 
+const numbers = [2, 8, 4, 7, 2, 87];
+
+const incrementedNumbers = numbers.map((number) => {
+  return number + 1;
+});
+
+console.log(incrementedNumbers);
 
 const posts = [
   { author: 'Marco', date: '12/3/2021', content: 'lorem ipsum...' },
@@ -30,12 +41,18 @@ const posts = [
 
 // Crea un nuovo array coi nomi di tutti gli autori
 
+const authors = posts.map(post => post.author);
+console.log(authors);
 
 
 const nums = [2, 8, 4, 7, 12, 87];
 
 // Crea un array a partire dall'array nums, che abbia solo i numeri pari
 
+
+const evenNums = nums.filter(num => num % 2 === 0);
+
+console.log(evenNums);
 
 const pencils = [
   { brand: 'Faber-Castell', weight: 8, sizeInCm: 12 },
@@ -52,6 +69,11 @@ const pencils = [
 
 // A partire dall'array fornito, crea due array. Uno con le matite lunghe almeno 15cm. L'altro con le restanti.
 
+const longPencils = pencils.filter(pencil => pencil.sizeInCm >= 15);
+const shortPencils = pencils.filter(pencil => pencil.sizeInCm < 15);
+
+console.log('Lunghe (≥15cm):', longPencils);
+console.log('Corte (<15cm):', shortPencils);
 
 
 const students = [
@@ -76,6 +98,10 @@ const students = [
 ];
 
 // Recupera i dati dello studente con id 2
+
+const student = students.find(s => s.id === 2);
+console.log(student);
+
 
 
 const students_2 = [
