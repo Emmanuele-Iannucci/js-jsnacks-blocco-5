@@ -125,3 +125,12 @@ const students_2 = [
 ];
 
 // Recuperare la classe dello studente Marco Lanci
+
+const marco = students_2.find(student => student.name === 'Marco Lanci');
+
+if (marco) {
+  console.log(marco.classroom);
+} else {
+  console.log('Studente non trovato');
+}
+
