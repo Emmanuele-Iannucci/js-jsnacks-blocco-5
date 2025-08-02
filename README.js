@@ -24,7 +24,6 @@ const numbers = [2, 8, 4, 7, 2, 87];
 
 // Crea un nuovo array in cui tutti i numeri siano incrementati di 1
 
-const numbers = [2, 8, 4, 7, 2, 87];
 
 const incrementedNumbers = numbers.map((number) => {
   return number + 1;
@@ -118,7 +117,7 @@ const students_2 = [
     classroom: '4A'
   },
   {
-    id: 3
+    id: 3,
     name: 'Luigi Banzi',
     age: 33,
     classroom: '5B'
