@@ -2,6 +2,10 @@ const names = ['Edoardo', 'Simone', 'Francesco'];
 
 // Stampa in console tutti i nomi
 
+names.forEach((nome) => {
+  console.log(nome);
+});
+
 
 const people = [
   { name: 'Paolo', age: 35 },
@@ -52,19 +56,19 @@ const pencils = [
 
 const students = [
   {
-   id: 1,
+    id: 1,
     name: 'Marco Lanci',
     age: 32,
     class: '3C'
   },
   {
-   id: 2,
+    id: 2,
     name: 'Mario Banfi',
     age: 34,
     class: '4A'
   },
   {
-   id: 3,
+    id: 3,
     name: 'Luigi Banzi',
     age: 33,
     class: '5B'
@@ -76,19 +80,19 @@ const students = [
 
 const students_2 = [
   {
-	  id: 1,
+    id: 1,
     name: 'Marco Lanci',
     age: 32,
     classroom: '3C'
   },
   {
-	  id: 2,
+    id: 2,
     name: 'Mario Banfi',
     age: 34,
     classroom: '4A'
   },
   {
-	  id: 3
+    id: 3
     name: 'Luigi Banzi',
     age: 33,
     classroom: '5B'
